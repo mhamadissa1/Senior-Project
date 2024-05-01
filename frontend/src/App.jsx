@@ -1,4 +1,4 @@
-import Navbar from './components/navbar.jsx';
+import Heading from './components/heading.jsx';
 import Routing from './routing.jsx';
 
 
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Heading />
       <Routing />
 
     </>
