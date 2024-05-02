@@ -1,16 +1,16 @@
-import Heading from './components/heading.jsx';
-import Routing from './routing.jsx';
-
+import Hero from "./components/hero.jsx";
+import Heading from "./components/heading.jsx";
+import Routing from "./routing.jsx";
 
 function App() {
-
   return (
     <>
-      <Heading />
-      <Routing />
-
+      <div className="h-[2000px]">
+        <Heading />
+        <Routing />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
