@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ReactSVG } from "react-svg";
 
-function Heading() {
+
+function Header() {
   return (
     <>
       <div className="navbar top-0 sticky flex h-64 font-semibold font-display p-[0px] z-10 bg-base-100">
@@ -107,4 +106,4 @@ function Heading() {
   );
 }
 
-export default Heading;
+export default Header;

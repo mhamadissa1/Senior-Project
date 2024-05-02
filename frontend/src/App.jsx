@@ -1,12 +1,11 @@
-import Hero from "./components/hero.jsx";
-import Heading from "./components/heading.jsx";
+import Header from "./components/header.jsx";
 import Routing from "./routing.jsx";
 
 function App() {
   return (
     <>
       <div className="h-[2000px]">
-        <Heading />
+        <Header />
         <Routing />
       </div>
     </>
