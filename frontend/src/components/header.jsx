@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Globe from "../assets/icons/globe.jsx";
 import Notification from "../assets/icons/notification.jsx";
 import Navbar from "./navbar.jsx";
+import Avatar from "./avatar.jsx";
+import DropdownLink from "./dropdownLink.jsx";
 
 
 function Header() {
@@ -27,7 +29,7 @@ function Header() {
 
           <div className="avatar">
             <div className="w-8 h-8 mx-1 rounded-full">
-              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <Avatar img={"https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}/>
             </div>
           </div>
 
