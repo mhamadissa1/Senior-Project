@@ -1,8 +1,8 @@
 import Logo from "../assets/icons/logo.jsx";
 import { Link } from "react-router-dom";
 import DropdownLink from "./dropdownLink.jsx";
+import UnderlineLink from "./underlineLink.jsx";
 import TradeContent from "./TradeContent.jsx";
-import ExpandDown from "../assets/icons/expandDown.jsx"
 
 function Navbar() {
   return (
@@ -25,14 +25,13 @@ function Navbar() {
                 className="hover:text-primary text-base"
                 to="/markets"
               >
-                Markets
+                <UnderlineLink>Markets</UnderlineLink>
                 
               </Link>
             </li>
             <li>
               <DropdownLink href="/trade" DropdownContent={TradeContent}>
                 Trade
-                {/* <ExpandDown /> */}
               </DropdownLink>
               
             </li>
@@ -41,7 +40,7 @@ function Navbar() {
                 className="hover:text-primary text-base"
                 to="/news"
               >
-                News
+                <UnderlineLink>News</UnderlineLink>
               </Link>
             </li>
 
@@ -50,7 +49,7 @@ function Navbar() {
                 className="hover:text-primary text-base"
                 to="/portfolio"
               >
-                Portfolio
+                <UnderlineLink>Portfolio</UnderlineLink>
               </Link>
             </li>
 
@@ -59,7 +58,7 @@ function Navbar() {
                 className="hover:text-primary text-base"
                 to="/wallet"
               >
-                Wallet
+                <UnderlineLink>Wallet</UnderlineLink>
               </Link>
             </li>
 
@@ -68,7 +67,7 @@ function Navbar() {
                 className="hover:text-primary text-base"
                 to="/academy"
               >
-                Academy
+                <UnderlineLink>Academy</UnderlineLink>
               </Link>
             </li>
           </ul>

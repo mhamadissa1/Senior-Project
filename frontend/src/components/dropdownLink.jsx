@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import ExpandDown from "../assets/icons/expandDown.jsx";
 
 function DropdownLink({ children, href, DropdownContent }) {
   const [open, setOpen] = useState(false);
