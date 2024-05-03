@@ -44,50 +44,6 @@ export default {
       medium: "500",
     },
 
-    fontSize: {
-      10: "0.625rem",
-      12: "0.75rem",
-      14: "0.875rem",
-      16: "1rem",
-      18: "1.125rem",
-      24: "1.5rem",
-      32: "2rem",
-      40: "2.5rem",
-    },
-
-    lineHeight: {
-      tight: "1.25",
-      normal: "1.5",
-    },
-
-    spacing: {
-      0: "0rem",
-      4: "0.3rem",
-      8: "0.5rem",
-      12: "0.75rem",
-      16: "1rem",
-      24: "1.5rem",
-      32:"2rem",
-      40:"2.5rem",
-      48: "3rem",
-      64:"4rem",
-      96: "24rem",
-      128: "8rem",
-      192:"12rem"
-      
-    },
-
-    width: {
-      40:"10rem",
-      96:"6rem"
-    },
-
-    borderRadius: {
-      6: '0.375rem',
-      8: '0.5rem',
-      12: '0.75rem',
-      'full': '9999px',
-    },
     extend: {},
   },
   plugins: [require("daisyui")],

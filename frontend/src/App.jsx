@@ -1,12 +1,14 @@
+import Footer from "./components/footer.jsx";
 import Header from "./components/header.jsx";
 import Routing from "./routing.jsx";
 
 function App() {
   return (
     <>
-      <div className="h-[2000px]">
+      <div>
         <Header />
         <Routing />
+        <Footer />
       </div>
     </>
   );

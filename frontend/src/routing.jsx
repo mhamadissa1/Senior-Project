@@ -14,7 +14,6 @@ function Routing() {
 
    return (
       <>
-
          <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/academy" element={<Academy />} />

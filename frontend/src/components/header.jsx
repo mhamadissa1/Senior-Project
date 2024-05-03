@@ -4,33 +4,33 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <div className="navbar top-0 sticky flex h-64 font-semibold font-display p-[0px] z-10 bg-base-100">
-        <div className="navbar-start ml-48">
-          <Link className="text-primary h-64 flex items-center text-24 mr-16" to="/">
+      <header className="navbar top-0 sticky flex h-16 font-semibold font-display p-[0px] z-10 bg-base-100">
+        <div className="navbar-start ml-12">
+          <Link className="text-primary h-4 flex items-center text-2xl mr-4" to="/">
           <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M660-570q-25 0-42.5-17.5T600-630q0-25 17.5-42.5T660-690q25 0 42.5 17.5T720-630q0 25-17.5 42.5T660-570Zm-360 0q-25 0-42.5-17.5T240-630q0-25 17.5-42.5T300-690q25 0 42.5 17.5T360-630q0 25-17.5 42.5T300-570Zm180 110q-25 0-42.5-17.5T420-520q0-25 17.5-42.5T480-580q25 0 42.5 17.5T540-520q0 25-17.5 42.5T480-460Zm0-220q-25 0-42.5-17.5T420-740q0-25 17.5-42.5T480-800q25 0 42.5 17.5T540-740q0 25-17.5 42.5T480-680Zm0 520q-20 0-40.5-3t-39.5-8v-143q0-35 23.5-60.5T480-400q33 0 56.5 25.5T560-314v143q-19 5-39.5 8t-40.5 3Zm-140-32q-20-8-38.5-18T266-232q-28-20-44.5-52T205-352q0-26-5.5-48.5T180-443q-10-13-37.5-39.5T92-532q-11-11-11-28t11-28q11-11 28-11t28 11l153 145q20 18 29.5 42.5T340-350v158Zm280 0v-158q0-26 10-51t29-42l153-145q12-11 28.5-11t27.5 11q11 11 11 28t-11 28q-23 23-50.5 49T780-443q-14 20-19.5 42.5T755-352q0 36-16.5 68.5T693-231q-16 11-34.5 21T620-192Z"/></svg>
             TerraTrade
           </Link>
           <ul className="flex flex-row">
             <li>
-              <Link className="mx-12 h-64 hover:text-primary flex items-center text-16" to="/markets">
+              <Link className="mx-3 h-16 hover:text-primary flex items-center text-base" to="/markets">
                 Markets
               </Link>
             </li>
             <li>
-              <div className="dropdown dropdown-hover h-64 flex items-center relative">
-                  <Link className="hover:text-primary  mx-12 text-16 flex flex-row" to="/trade">
+              <div className="dropdown dropdown-hover h-16 flex items-center relative">
+                  <Link className="hover:text-primary mx-3 text-base flex flex-row" to="/trade">
                     Trade
                     <svg className="self-center" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
                   </Link>
 
                 <ul className="dropdown-content z-10">
-                  <li className="absolute mt-16">
-                    <Link className="hover:text-primary m-12 text-16" to="/trade/spot">
+                  <li className="absolute mt-4">
+                    <Link className="hover:text-primary m-3 text-base" to="/trade/spot">
                       Spot
                     </Link>
                   </li>
-                  <li className="absolute mt-40">
-                    <Link className="hover:text-primary m-12 text-16" to="/trade/futures">
+                  <li className="absolute mt-10">
+                    <Link className="hover:text-primary m-3 text-base" to="/trade/futures">
                       Futures
                     </Link>
                   </li>
@@ -38,48 +38,48 @@ function Header() {
               </div>
             </li>
             <li>
-              <Link className="hover:text-primary mx-12 h-64 flex items-center text-16" to="/news">
+              <Link className="hover:text-primary mx-3 h-16 flex items-center text-base" to="/news">
                 News
               </Link>
             </li>
 
             <li>
-              <Link className="hover:text-primary mx-12 h-64 flex items-center text-16" to="/portfolio">
+              <Link className="hover:text-primary mx-3 h-16 flex items-center text-base" to="/portfolio">
                 Portfolio
               </Link>
             </li>
 
             <li>
-              <Link className="hover:text-primary mx-12 h-64 flex items-center text-16" to="/wallet">
+              <Link className="hover:text-primary mx-3 h-16 flex items-center text-base" to="/wallet">
                 Wallet
               </Link>
             </li>
 
             <li>
-              <Link className="hover:text-primary mx-12 h-64 flex items-center text-16" to="/academy">
+              <Link className="hover:text-primary mx-3 h-16 flex items-center text-base" to="/academy">
                 Academy
               </Link>
             </li>
           </ul>
         </div>
-        <div className="navbar-end h-64 mr-48">
+        <div className="navbar-end h-16 mr-12">
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered rounded-full w-40 h-32 mx-4 flex"
+            className="input input-bordered rounded-full w-44 h-8 mx-1 flex"
           />
 
-          <Link className="btn btn-sm btn-primary h-32 rounded-12 mx-4" to="/deposit">
+          <Link className="btn btn-sm btn-primary h-8 rounded-xl mx-1" to="/deposit">
             Deposit
           </Link>
 
           <div className="avatar">
-            <div className="w-32 h-32 rounded-full mx-4 flex items-center">
+            <div className="w-8 h-8 rounded-full mx-1 flex items-center">
               <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
           </div>
 
-          <div className="mx-4 h-64 flex items-center">
+          <div className="mx-1 h-16 flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24"
@@ -90,7 +90,7 @@ function Header() {
             </svg>
           </div>
 
-          <div className="mx-4 h-64 flex items-center">
+          <div className="mx-1 h-16 flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24"
@@ -101,7 +101,7 @@ function Header() {
             </svg>
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 }
