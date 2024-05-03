@@ -4,8 +4,9 @@ import Globe from "../assets/icons/globe.jsx";
 import Notification from "../assets/icons/notification.jsx";
 import Navbar from "./navbar.jsx";
 import Avatar from "./avatar.jsx";
-import DropdownLink from "./dropdownLink.jsx";
-
+import DropdownAvatar from "./dropdownAvatar.jsx";
+import ProfileContent from "./profileContent.jsx";
+import TradeContent from "./TradeContent.jsx";
 
 function Header() {
   return (
@@ -20,17 +21,21 @@ function Header() {
             className="input input-bordered w-44 h-8 rounded-full"
           />
 
-          <Link
-            className="btn btn-sm btn-primary h-8 rounded-xl"
-            to="/deposit"
-          >
+          <Link className="btn btn-sm btn-primary h-8 rounded-xl" to="/deposit">
             Deposit
           </Link>
 
-          <div className="avatar">
-            <div className="w-8 h-8 mx-1 rounded-full">
-              <Avatar img={"https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}/>
-            </div>
+          <div>
+            <DropdownAvatar
+              Avatar={
+                <Avatar
+                  img={
+                    "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                  }
+                />
+              }
+              DropdownContent={TradeContent}
+            ></DropdownAvatar>
           </div>
 
           <div className="">
