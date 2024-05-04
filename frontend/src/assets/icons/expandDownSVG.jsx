@@ -1,4 +1,4 @@
-function ExpandDown() {
+function ExpandDownSVG() {
   return (
     <>
       <svg
@@ -12,4 +12,4 @@ function ExpandDown() {
     </>
   );
 }
-export default ExpandDown;
+export default ExpandDownSVG;

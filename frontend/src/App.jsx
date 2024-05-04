@@ -1,5 +1,5 @@
-import Footer from "./components/footer.jsx";
-import Header from "./components/header.jsx";
+import Footer from "./components/sections/footer.jsx";
+import Header from "./components/sections/header.jsx";
 import Routing from "./routing.jsx";
 
 function App() {

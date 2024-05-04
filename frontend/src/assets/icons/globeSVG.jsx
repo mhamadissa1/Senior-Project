@@ -1,4 +1,4 @@
-function Globe() {
+function GlobeSVG() {
   return (
     <>
       <svg
@@ -13,4 +13,4 @@ function Globe() {
   );
 }
 
-export default Globe;
+export default GlobeSVG;

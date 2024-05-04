@@ -1,8 +1,8 @@
-import Logo from "../assets/icons/logo.jsx";
+import LogoSVG from "../../assets/icons/logoSVG.jsx";
 import { Link } from "react-router-dom";
-import DropdownLink from "./dropdownLink.jsx";
-import UnderlineLink from "./underlineLink.jsx";
-import TradeContent from "./TradeContent.jsx";
+import DropdownLink from "../dropdown/dropdownLink.jsx";
+import UnderlineLink from "../underlineLink.jsx";
+import TradeContent from "../dropdown/TradeContent.jsx";
 
 function Navbar() {
   return (
@@ -13,7 +13,7 @@ function Navbar() {
             className="text-primary text-2xl h-4 flex flex-row items-center"
             to="/"
           >
-            <Logo />
+            <LogoSVG />
             TerraTrade
           </Link>
         </div>

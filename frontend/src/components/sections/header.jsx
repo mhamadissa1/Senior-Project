@@ -1,25 +1,23 @@
 import { Link } from "react-router-dom";
 
-import Globe from "../assets/icons/globe.jsx";
-import Notification from "../assets/icons/notification.jsx";
+import GlobeSVG from "../../assets/icons/globeSVG.jsx";
+import NotificationSVG from "../../assets/icons/notificationSVG.jsx";
 import Navbar from "./navbar.jsx";
-import Avatar from "./avatar.jsx";
-import DropdownAvatar from "./dropdownAvatar.jsx";
-import ProfileContent from "./profileContent.jsx";
-import TradeContent from "./TradeContent.jsx";
+import Avatar from "../widgets/avatar.jsx";
+import DropdownAvatar from "../dropdown/dropdownAvatar.jsx";
+import ProfileContent from "../dropdown/profileContent.jsx";
+import TradeContent from "../dropdown/TradeContent.jsx";
+import InputField from "../widgets/inputField.jsx";
 
 function Header() {
   return (
     <>
       <header className="bg-base-100 font-display font-semibold top-0 h-16 m-0 px-12 z-10 sticky flex flex-row justify-between">
+
         <Navbar />
 
         <div className="flex flex-row gap-2 items-center">
-          <input
-            type="text"
-            placeholder="Search"
-            className="input input-bordered w-44 h-8 rounded-full"
-          />
+          <InputField type="text" placeholder="Search" />
 
           <Link className="btn btn-sm btn-primary h-8 rounded-xl" to="/deposit">
             Deposit
@@ -38,13 +36,9 @@ function Header() {
             ></DropdownAvatar>
           </div>
 
-          <div className="">
-            <Notification />
-          </div>
-
-          <div className="">
-            <Globe />
-          </div>
+            <NotificationSVG />      
+            <GlobeSVG />
+       
         </div>
       </header>
     </>

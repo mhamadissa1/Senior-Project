@@ -1,4 +1,4 @@
-function Notification() {
+function NotificationSVG() {
   return (
     <>
       <svg
@@ -13,4 +13,4 @@ function Notification() {
   );
 }
 
-export default Notification;
+export default NotificationSVG;

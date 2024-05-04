@@ -1,0 +1,133 @@
+{
+    "Users": [
+        {
+            "user_id": 1,
+            "username": "john_doe",
+            "email": "john@example.com",
+            "password_hash": "hashed_password",
+            "created_at": "2024-05-01T12:00:00Z",
+            "last_login": "2024-05-04T12:00:00Z"
+        }
+    ],
+    "UserProfiles": [
+        {
+            "profile_id": 1,
+            "user_id": 1,
+            "full_name": "John Doe",
+            "birthdate": "1990-01-01",
+            "address": "123 Main St, Anytown, USA"
+        }
+    ],
+    "Accounts": [
+        {
+            "account_id": 1,
+            "user_id": 1,
+            "account_status": "active",
+            "account_type": "standard"
+        }
+    ],
+    "Wallets": [
+        {
+            "wallet_id": 1,
+            "account_id": 1,
+            "balance": 1500.0,
+            "currency": "USD"
+        }
+    ],
+    "Transactions": [
+        {
+            "transaction_id": 1,
+            "wallet_id": 1,
+            "transaction_type": "deposit",
+            "amount": 500.0,
+            "timestamp": "2024-05-01T13:00:00Z"
+        }
+    ],
+    "Trades": [
+        {
+            "trade_id": 1,
+            "account_id": 1,
+            "asset": "AAPL",
+            "quantity": 10,
+            "price": 150.0,
+            "trade_type": "buy",
+            "timestamp": "2024-05-03T15:00:00Z"
+        }
+    ],
+    "Portfolios": [
+        {
+            "portfolio_id": 1,
+            "account_id": 1,
+            "total_value": 2000.0
+        }
+    ],
+    "Assets": [
+        {
+            "asset_id": 1,
+            "portfolio_id": 1,
+            "asset_type": "stocks",
+            "quantity": 10,
+            "average_price": 150.0
+        }
+    ],
+    "Journals": [
+        {
+            "journal_id": 1,
+            "user_id": 1,
+            "entry": "Today was a good day for trading!",
+            "entry_date": "2024-05-03T16:00:00Z"
+        }
+    ],
+    "PricePredictions": [
+        {
+            "prediction_id": 1,
+            "asset_type": "AAPL",
+            "predicted_price": 160.0,
+            "prediction_date": "2024-05-04T09:00:00Z"
+        }
+    ],
+    "NewsArticles": [
+        {
+            "article_id": 1,
+            "title": "Market Update",
+            "content": "The stock market saw significant gains today, with tech stocks leading the charge.",
+            "publication_date": "2024-05-04T08:00:00Z",
+            "source": "Market News",
+            "category": "Top Stories"
+        }
+    ],
+    "EducationalContent": [
+        {
+            "content_id": 1,
+            "title": "Understanding the Stock Market",
+            "description": "A beginner's guide to stock market fundamentals.",
+            "url": "http://example.com/stock_market_guide",
+            "content_type": "article",
+            "level": "beginner"
+        }
+    ],
+    "MarketData": [
+        {
+            "data_id": 1,
+            "asset_type": "stocks",
+            "symbol": "AAPL",
+            "open_price": 145.0,
+            "close_price": 150.0,
+            "high": 151.0,
+            "low": 144.0,
+            "volume": 1000000,
+            "timestamp": "2024-05-03T14:00:00Z"
+        }
+    ],
+    "UserTradingStats": [
+        {
+            "stats_id": 1,
+            "user_id": 1,
+            "total_trades": 15,
+            "profitable_trades": 10,
+            "loss_trades": 5,
+            "profit_amount": 300.0,
+            "loss_amount": 200.0
+        }
+    ]
+}
