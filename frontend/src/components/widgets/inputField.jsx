@@ -4,7 +4,7 @@ function InputField(props) {
       <input
         type={props.type}
         placeholder={props.placeholder}
-        className="input input-bordered w-44 h-8 rounded-full"
+        className={props.className}
       />
     </>
   );

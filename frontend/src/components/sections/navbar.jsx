@@ -6,7 +6,7 @@ import TradeContent from "../dropdown/TradeContent.jsx";
 
 function Navbar() {
   return (
-    <>
+    <> 
       <div className="flex flex-row items-center gap-7">
         <div>
           <Link
@@ -19,7 +19,7 @@ function Navbar() {
         </div>
 
         <div>
-          <ul className="flex flex-row gap-4">
+          <ul className="md:flex md:flex-row md:gap-4 hidden">
             <li>
               <Link
                 className="hover:text-primary text-base"

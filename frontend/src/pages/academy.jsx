@@ -5,9 +5,9 @@ import data from "../db.json";
 function Academy() {
   return (
     <>
-      <div className="h-[1000px]">
+      <div className="">
         <h1>Academy</h1>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-3">
           <AcademyVerticalCard
             img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
             alt="Shoes"
@@ -28,7 +28,7 @@ function Academy() {
           />
         </div>
 
-        <div className="grid grid-cols-1">
+        <div className="">
           <AcademyHorizontalCard
             img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
             alt="Shoes"
