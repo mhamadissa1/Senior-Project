@@ -1,7 +1,10 @@
-import LogoSVG from "../../assets/icons/logoSVG.jsx";
 import { Link } from "react-router-dom";
+
+import LogoSVG from "../../assets/icons/logoSVG.jsx";
+
 import DropdownLink from "../dropdown/dropdownLink.jsx";
 import UnderlineLink from "../underlineLink.jsx";
+
 import TradeContent from "../dropdown/TradeContent.jsx";
 
 function Navbar() {

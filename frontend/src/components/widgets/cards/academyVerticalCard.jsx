@@ -1,7 +1,7 @@
 function AcademyVerticalCard(props) {
   return (
     <>
-      <div className="card card-compact bg-base-100 shadow-xl">
+      <div className="card card-compact bg-base-100 shadow-xl w-1/2">
         <figure>
           <img
             src={props.img}
