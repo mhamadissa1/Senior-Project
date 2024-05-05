@@ -10,7 +10,7 @@ import TradeContent from "../dropdown/TradeContent.jsx";
 function Navbar() {
   return (
     <> 
-      <div className="flex flex-row items-center gap-7">
+      <div className="flex flex-row items-center gap-4">
         <div>
           <Link
             className="text-primary text-2xl h-4 flex flex-row items-center"
@@ -22,16 +22,17 @@ function Navbar() {
         </div>
 
         <div>
-          <ul className="hidden md:flex md:flex-row md:gap-4">
+          <ul className="hidden lg:flex flex-row gap-4">
             <li>
               <Link
-                className="hover:text-primary text-base"
+                className="hover:text-primary text-sm"
                 to="/markets"
               >
                 <UnderlineLink>Markets</UnderlineLink>
                 
               </Link>
             </li>
+            
             <li>
               <DropdownLink href="/trade" DropdownContent={TradeContent}>
                 Trade
@@ -40,7 +41,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                className="hover:text-primary text-base"
+                className="hover:text-primary text-sm"
                 to="/news"
               >
                 <UnderlineLink>News</UnderlineLink>
@@ -49,7 +50,7 @@ function Navbar() {
 
             <li>
               <Link
-                className="hover:text-primary text-base"
+                className="hover:text-primary text-sm"
                 to="/portfolio"
               >
                 <UnderlineLink>Portfolio</UnderlineLink>
@@ -58,7 +59,7 @@ function Navbar() {
 
             <li>
               <Link
-                className="hover:text-primary text-base"
+                className="hover:text-primary text-sm"
                 to="/wallet"
               >
                 <UnderlineLink>Wallet</UnderlineLink>
@@ -67,7 +68,7 @@ function Navbar() {
 
             <li>
               <Link
-                className="hover:text-primary text-base"
+                className="hover:text-primary text-sm"
                 to="/academy"
               >
                 <UnderlineLink>Academy</UnderlineLink>

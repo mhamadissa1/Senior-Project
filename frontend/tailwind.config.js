@@ -44,7 +44,12 @@ export default {
       medium: "500",
     },
 
-    extend: {},
+    extend: {
+      screens: {
+        'xl': '1200px',
+        
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

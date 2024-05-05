@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <Header />
-        <Routing />
+        {/* <Routing /> */}
         {/* <Footer /> */}
       </div>
     </>

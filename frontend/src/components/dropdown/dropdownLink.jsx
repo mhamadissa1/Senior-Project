@@ -13,7 +13,7 @@ function DropdownLink({ children, href, DropdownContent }) {
         className="relative"
       >
         <Link
-          className="hover:text-primary text-base"
+          className="hover:text-primary text-sm"
           to={href}
         >
           {children}
