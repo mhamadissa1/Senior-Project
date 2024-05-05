@@ -30,11 +30,11 @@ function RightMenu() {
                     DropdownContent={TradeContent}
                 />
 
-                <WalletSVG className="hidden lg:flex" />
+                <WalletSVG className="" />
 
-                <NotificationSVG className="hidden lg:flex" />
+                <NotificationSVG className="" />
 
-                <GlobeSVG className="hidden lg:flex" />
+                <GlobeSVG className="" />
 
             </div>
         </>

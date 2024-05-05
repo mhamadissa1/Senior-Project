@@ -22,7 +22,7 @@ function Navbar() {
         </div>
 
         <div>
-          <ul className="md:flex md:flex-row md:gap-4 hidden">
+          <ul className="hidden md:flex md:flex-row md:gap-4">
             <li>
               <Link
                 className="hover:text-primary text-base"
