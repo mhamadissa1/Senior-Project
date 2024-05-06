@@ -1,25 +1,18 @@
 import { Link } from "react-router-dom";
 
-import LogoSVG from "../../assets/icons/logoSVG.jsx";
+import Logo from "../../assets/logo/logo.jsx";
 
 import DropdownLink from "../dropdown/dropdownLink.jsx";
 import UnderlineLink from "../underlineLink.jsx";
 
 import TradeContent from "../dropdown/TradeContent.jsx";
 
+
 function Navbar() {
   return (
     <> 
       <div className="flex flex-row items-center gap-4">
-        <div>
-          <Link
-            className="text-primary text-2xl h-4 flex flex-row items-center"
-            to="/"
-          >
-            <LogoSVG />
-            TerraTrade
-          </Link>
-        </div>
+        <Logo />
 
         <div>
           <ul className="hidden lg:flex flex-row gap-4">
