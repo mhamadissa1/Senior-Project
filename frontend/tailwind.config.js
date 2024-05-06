@@ -36,14 +36,6 @@ export default {
       mono: ["Courier Prime", "monospace"],
     },
 
-    fontWeight: {
-      // Open Sans
-      regular: "400",
-      semibold: "600",
-      // IBM Plex Sans
-      medium: "500",
-    },
-
     extend: {
       screens: {
         'xl': '1200px',
