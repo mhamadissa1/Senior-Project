@@ -25,7 +25,8 @@ function RightMenu() {
 
         <SearchSVG className="flex xl:hidden" />
 
-        <Link className="btn btn-sm btn-primary h-8 rounded-xl" to="/deposit">
+       
+        <Link className="btn btn-sm btn-primary rounded-xl" to="/deposit">
           Deposit
         </Link>
 
@@ -40,15 +41,13 @@ function RightMenu() {
                     DropdownContent={TradeContent}
                 /> */}
 
-     
-          <WalletSVG className="hidden xl:flex" />
+        <WalletSVG className="hidden xl:flex" />
 
-          <NotificationSVG className="hidden xl:flex" />
+        <NotificationSVG className="hidden xl:flex" />
 
-          <GlobeSVG className="hidden xl:flex" />
+        <GlobeSVG className="hidden xl:flex" />
 
-          <MenuSVG className="xl:hidden flex"/>
-       
+        <MenuSVG className="xl:hidden flex" />
       </div>
     </>
   );
