@@ -7,7 +7,7 @@ function AcademyVerticalCard(props) {
         <div className="flex flex-col">
           <div className="">
             <img
-              className="object-cover h-full w-full"
+              className="object-cover h-full w-full rounded-2xl"
               src={props.img}
               alt={props.alt}
             />

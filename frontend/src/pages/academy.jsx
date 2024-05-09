@@ -3,18 +3,17 @@ import AcademyHorizontalCard from "../components/widgets/cards/academyHorizontal
 import data from "../db.json";
 import Range from "../components/widgets/range.jsx";
 import Badge from "../components/widgets/badge.jsx";
+import ListSVG from "../assets/icons/listSVG.jsx";
+import GridSVG from "../assets/icons/gridSVG.jsx";
 
 function Academy() {
   return (
     <>
       {/* Filters */}
-
       <div className="flex flex-col items-center gap-y-8 mt-12 ">
-
         <h1 className="text-3xl font-display font-semibold text-base-content">
           Topics at Academy
         </h1>
-
         <div className="grid grid-cols-2 auto-cols-fr justify-items-center gap-x-10">
           <div className="flex flex-col justify-self-end gap-y-4 p-4">
             <h5>Topics</h5>
@@ -53,11 +52,25 @@ function Academy() {
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Filter Bar */}
-      <div></div>
+      <div className="flex flex-row justify-between items-center bg-base-200 py-4 my-8">
+        <div className="flex flex-row">
+          <p>Layout</p>
+          <GridSVG />
+          <ListSVG />
+          <button className="btn btn-sm btn-primary rounded-xl">Apply Filters</button>
+          <button className="btn btn-sm btn-primary rounded-xl">Clear Filters</button>
+
+        </div>
+
+        <div>
+        <button className="btn btn-sm btn-primary rounded-xl">Hide Filters</button>
+
+        </div>
+
+      </div>
 
       {/* Cards */}
       <div className="flex items-center justify-center">
