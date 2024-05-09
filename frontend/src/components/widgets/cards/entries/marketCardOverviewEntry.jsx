@@ -1,4 +1,4 @@
-function MarketCardEntry(props) {
+function MarketCardOverviewEntry(props) {
   return (
     <>
       <div className="flex flex-row justify-between items-center gap-x-6">
@@ -10,4 +10,4 @@ function MarketCardEntry(props) {
   );
 }
 
-export default MarketCardEntry;
+export default MarketCardOverviewEntry;

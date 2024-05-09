@@ -1,4 +1,4 @@
-function MarketCardTitle(props) {
+function MarketCardOverviewTitle(props) {
   return (
     <>
       <div className="flex flex-row justify-between mb-2">
@@ -9,4 +9,4 @@ function MarketCardTitle(props) {
   );
 }
 
-export default MarketCardTitle;
+export default MarketCardOverviewTitle;
