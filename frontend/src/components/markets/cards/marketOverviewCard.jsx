@@ -1,5 +1,5 @@
-import MarketCardOverviewEntry from "./entries/marketCardOverviewEntry";
-import MarketCardOverviewTitle from "./entries/marketCardOverviewTitle";
+import MarketCardOverviewEntry from "../entries/marketCardOverviewEntry";
+import MarketCardOverviewTitle from "../entries/marketCardOverviewTitle";
 
 function MarketOverviewCard() {
   return (
