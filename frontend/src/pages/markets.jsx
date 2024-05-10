@@ -1,6 +1,7 @@
 import MarketBodyCard from "../components/markets/cards/marketBodyCard";
 import MarketOverviewCard from "../components/markets/cards/marketOverviewCard";
-import { Link } from "react-router-dom";
+import MarketTabs from "../components/markets/cards/marketTabs";
+import MarketTabsList from "../components/markets/cards/marketTabsList";
 function Markets() {
   return (
     <>
@@ -14,23 +15,10 @@ function Markets() {
         <MarketOverviewCard />
       </div>
 
-      <div className="flex flex-row gap-x-8 font-display font-semibold text-[#797A7B] text-lg">
-        <Link to="">Favorites</Link>
-        <Link to="" className="text-base-content">All Cryptos</Link>
-        <Link to="">Forex</Link>
-        <Link to="">Stocks</Link>
-        <Link to="">Zones</Link>
-      </div>
+      
+      <MarketTabs />
 
-      <div className="flex flex-row gap-x-6 font-display font-medium text-[#797A7B] text-sm">
-        <Link to="">All</Link>
-        <Link to="">AI</Link>
-        <Link to="" className="text-base-content">Payments</Link>
-        <Link to="">Metaverse</Link>
-        <Link to="">DeFi</Link>
-        <Link to="">Gaming</Link>
-        <Link to="">DePin</Link>
-      </div>
+      <MarketTabsList />
 
       <MarketBodyCard />
     </>

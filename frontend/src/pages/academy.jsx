@@ -1,6 +1,6 @@
 import AcademyVerticalCard from "../components/academy/cards/academyVerticalCard.jsx";
 import AcademyHorizontalCard from "../components/academy/cards/academyHorizontalCard.jsx";
-import data from "../db.json";
+
 import Range from "../components/widgets/range.jsx";
 import Badge from "../components/widgets/badge.jsx";
 import ListSVG from "../assets/icons/listSVG.jsx";
