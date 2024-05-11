@@ -1,80 +1,39 @@
 import AcademyVerticalCard from "../components/academy/cards/academyVerticalCard.jsx";
 import AcademyHorizontalCard from "../components/academy/cards/academyHorizontalCard.jsx";
 
-import Range from "../components/widgets/range.jsx";
-import Badge from "../components/widgets/badge.jsx";
-import ListSVG from "../assets/icons/listSVG.jsx";
-import GridSVG from "../assets/icons/gridSVG.jsx";
+import Filters from "../components/academy/filters.jsx";
+import FilterBar from "../components/academy/filterBar.jsx";
 
 function Academy() {
   return (
     <>
-      {/* Filters */}
-      <div className="flex flex-col items-center gap-y-8 mt-12 ">
-        <h1 className="text-3xl font-display font-semibold text-base-content">
-          Topics at Academy
-        </h1>
-        <div className="grid grid-cols-2 auto-cols-fr justify-items-center gap-x-10">
-          <div className="flex flex-col justify-self-end gap-y-4 p-4">
-            <h5>Topics</h5>
-            <div className="flex flex-rows flex-wrap w-auto">
-              <Badge />
-              <Badge />
-              <Badge />
-              <Badge />
-              <Badge />
-              <Badge />
-              <Badge />
-              <Badge />
-              <Badge />
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-self-start min-w-[530px]">
-            <div className="flex flex-col gap-y-4 p-4">
-              <h5>Difficulty</h5>
-              <div className="flex flex-row gap-4">
-                <button className="bg-[#E89296] text-base-content font-body font-medium px-3 py-2 rounded-xl text-xs flex items-center">
-                  Beginner
-                </button>
-                <button className="bg-[#FFE5A8] text-base-content font-body font-medium px-3 py-2 rounded-xl text-xs flex items-center">
-                  Intermediate
-                </button>
-                <button className="bg-[#D8E4C2] text-base-content font-body font-medium px-3 py-2 rounded-xl text-xs flex items-center">
-                  Advanced
-                </button>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-y-4 p-4">
-              <h5>Reading Time</h5>
-              <Range />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Filter Bar */}
-      <div className="flex flex-row justify-between items-center bg-base-200 py-4 my-8">
-        <div className="flex flex-row">
-          <p>Layout</p>
-          <GridSVG />
-          <ListSVG />
-          <button className="btn btn-sm btn-primary rounded-xl">Apply Filters</button>
-          <button className="btn btn-sm btn-primary rounded-xl">Clear Filters</button>
-
-        </div>
-
-        <div>
-        <button className="btn btn-sm btn-primary rounded-xl">Hide Filters</button>
-
-        </div>
-
-      </div>
-
-      {/* Cards */}
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center py-12">
         <div className="mx-6">
+          <h1 className="text-4xl font-display font-semibold text-base-content mb-6">
+            Topics at Academy
+          </h1>
+          <Filters />
+        </div>
+      </div>
+
+      <div className="bg-base-200 w-full">
+        <div className="max-w-[1100px] mx-auto">
+          <FilterBar />
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center py-12">
+        <div className="mx-6">
+          <div className="flex flex-row justify-between mb-8">
+            <h2 className="text-3xl font-display font-semibold text-base-content">
+              Articles
+            </h2>
+            <button className="btn btn-sm btn-primary rounded-xl">
+              Recently Published
+            </button>
+          </div>
+
+          {/* Cards */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 justify-items-center">
             <AcademyVerticalCard
               img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -100,31 +59,8 @@ function Academy() {
               date="May 5, 2024"
               duration="5m"
             />
-               <AcademyVerticalCard
-              img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-              title="What is Bitcoin?"
-              diff="Intermediate"
-              date="May 5, 2024"
-              duration="5m"
-            />
-            <AcademyVerticalCard
-              img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-              title="What is Bitcoin?"
-              diff="Intermediate"
-              date="May 5, 2024"
-              duration="5m"
-            />
-            <AcademyVerticalCard
-              img="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-              title="What is Bitcoin?"
-              diff="Intermediate"
-              date="May 5, 2024"
-              duration="5m"
-            />
-          </div>
+           </div>
+        
         </div>
       </div>
     </>

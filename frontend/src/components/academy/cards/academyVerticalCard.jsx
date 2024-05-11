@@ -1,4 +1,5 @@
 import ClockSVG from "../../../assets/icons/clockSVG";
+import { Link } from "react-router-dom";
 
 function AcademyVerticalCard(props) {
   return (
@@ -14,8 +15,8 @@ function AcademyVerticalCard(props) {
           </div>
 
           <div className="flex flex-col gap-10 p-8">
-            <div className="text-base-content text-xl font-display font-semibold">
-              <h5>{props.title}</h5>
+            <div className="text-base-content text-xl font-display font-semibold hover:underline">
+              <Link to="">{props.title}</Link>
             </div>
 
             <div className="flex flex-row items-center gap-4">
