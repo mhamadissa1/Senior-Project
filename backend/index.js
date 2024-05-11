@@ -27,11 +27,23 @@ app.get('/markets', async (req, res) => {
             },
             params: {
                 start: 1,
-                limit: 1,
+                limit: 3,
                 convert: 'USD'
             }
         });
-        res.json(response.data);
+
+        const filteredData = response.data.data.map((coin) => ({
+            rank: coin.cmc_rank,
+            name: coin.name,
+            symbol: coin.symbol,
+            price: coin.quote.USD.price,
+            percentChange24h: coin.quote.USD.percent_change_24h,
+            volumeChange24h: coin.quote.USD.volume_change_24h,
+            marketCap: coin.quote.USD.market_cap,
+            circulatingSupply: coin.circulating_supply,
+        }));
+
+        res.json(filteredData);
         
     } catch (error) {
         if (error.response) {
