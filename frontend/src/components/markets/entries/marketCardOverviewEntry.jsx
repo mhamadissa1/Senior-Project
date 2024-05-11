@@ -1,7 +1,7 @@
 function MarketCardOverviewEntry(props) {
   return (
     <>
-      <ul className="flex flex-row justify-between items-center gap-x-6">
+      <ul className="flex flex-row justify-between items-center gap-x-6 h-10">
         <li className="font-body">{props.name}</li>
         <li className="font-body">{props.price}</li>
         <li className="font-body">{props.percentage}</li>

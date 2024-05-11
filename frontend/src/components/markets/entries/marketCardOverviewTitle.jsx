@@ -1,9 +1,9 @@
 function MarketCardOverviewTitle(props) {
   return (
     <>
-      <div className="flex flex-row justify-between mb-2">
+      <div className="flex flex-row justify-between items-center mb-1 h-6 font-body text-xs font-semibold">
         <h3>{props.title}</h3>
-        <button>{props.buttonName}</button>
+        <button>More</button>
       </div>
     </>
   );
