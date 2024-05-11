@@ -9,12 +9,12 @@ function MarketTabsList() {
   }
   return (
     <>
-      <div className="flex flex-row gap-x-6 font-display font-medium text-[#797A7B] text-sm mb-8">
+      <div className="flex flex-row gap-x-6 font-display font-medium  text-sm mb-8">
         <Link
           to=""
           onClick={() => handleClick(0)}
-          className={`"text-base-content ${
-            isActive === 0 ? "text-base-content" : ""
+          className={`${
+            isActive === 0 ? "text-base-content" : "text-[#797A7B]"
           }`}
         >
           All
@@ -22,8 +22,8 @@ function MarketTabsList() {
         <Link
           to=""
           onClick={() => handleClick(1)}
-          className={`"text-base-content ${
-            isActive === 1 ? "text-base-content" : ""
+          className={`${
+            isActive === 1 ? "text-base-content" : "text-[#797A7B]"
           }`}
         >
           AI
@@ -31,8 +31,8 @@ function MarketTabsList() {
         <Link
           to=""
           onClick={() => handleClick(2)}
-          className={`"text-base-content ${
-            isActive === 2 ? "text-base-content" : ""
+          className={`${
+            isActive === 2 ? "text-base-content" : "text-[#797A7B]"
           }`}
         >
           Payments
@@ -40,8 +40,8 @@ function MarketTabsList() {
         <Link
           to=""
           onClick={() => handleClick(3)}
-          className={`"text-base-content ${
-            isActive === 3 ? "text-base-content" : ""
+          className={`${
+            isActive === 3 ? "text-base-content" : "text-[#797A7B]"
           }`}
         >
           Metaverse
@@ -49,8 +49,8 @@ function MarketTabsList() {
         <Link
           to=""
           onClick={() => handleClick(4)}
-          className={`"text-base-content ${
-            isActive === 4 ? "text-base-content" : ""
+          className={`${
+            isActive === 4 ? "text-base-content" : "text-[#797A7B]"
           }`}
         >
           DeFi
@@ -58,8 +58,8 @@ function MarketTabsList() {
         <Link
           to=""
           onClick={() => handleClick(5)}
-          className={`"text-base-content ${
-            isActive === 5 ? "text-base-content" : ""
+          className={`${
+            isActive === 5 ? "text-base-content" : "text-[#797A7B]"
           }`}
         >
           Gaming
@@ -67,8 +67,8 @@ function MarketTabsList() {
         <Link
           to=""
           onClick={() => handleClick(6)}
-          className={`"text-base-content ${
-            isActive === 6 ? "text-base-content" : ""
+          className={`${
+            isActive === 6 ? "text-base-content" : "text-[#797A7B]"
           }`}
         >
           DePin
