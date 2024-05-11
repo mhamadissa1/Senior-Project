@@ -7,8 +7,8 @@ function FilterBar() {
   return (
     <>
       <div className="flex justify-between items-center py-4">
-        <div className="flex flex-row gap-x-10">
-          <p>Layout</p>
+        <div className="flex flex-row items-center gap-x-10">
+          <p className="text-base font-semibold">Layout</p>
 
 
 

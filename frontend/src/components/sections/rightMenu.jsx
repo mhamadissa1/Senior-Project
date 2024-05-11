@@ -4,7 +4,7 @@ import GlobeSVG from "../../assets/icons/globeSVG.jsx";
 import NotificationSVG from "../../assets/icons/notificationSVG.jsx";
 import WalletSVG from "../../assets/icons/walletSVG.jsx";
 import SearchSVG from "../../assets/icons/searchSVG.jsx";
-import MenuSVG from "../../assets/icons/menu.jsx";
+import MenuSVG from "../../assets/icons/menuSVG.jsx";
 
 import Avatar from "../widgets/avatar.jsx";
 import DropdownAvatar from "../dropdown/dropdownAvatar.jsx";
